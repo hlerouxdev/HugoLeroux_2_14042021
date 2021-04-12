@@ -1,3 +1,4 @@
+/* Police utilisée */
 @font-face
 {
     font-family: 'Raleway';
@@ -6,6 +7,8 @@
     font-weight: normal;
     font-style: normal;
 }
+
+/* Réglages généraux */
 body{
     font-family: 'Raleway', sans-serif;
 }
@@ -13,7 +16,14 @@ body{
     width: 90%;
     margin: auto;
 }
+a{
+    text-decoration: none;
+}
+a :hover{
+    color: blue;
+}
 
+/* Décorations entête */
 #entête{
     display: flex;
     justify-content: space-between;
@@ -22,4 +32,25 @@ body{
 nav{
     display: flex;
 
+}
+
+/* Décorations pied de page */
+footer{
+    display: flex;
+    background-color: #F2F2F2;
+}
+footer ul{
+    list-style-type: none;
+}
+footer a{
+    color: black;
+}
+#footer-apropos{
+    width: 33%;
+}
+#footer-hebergements{
+    width: 33%;
+}
+#footer-assistance{
+    width: 33%;
 }
