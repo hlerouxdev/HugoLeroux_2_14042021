@@ -60,9 +60,17 @@ nav a:hover{
     align-items: center;
     width: 90%;
     margin: auto;
+    border: 1px black solid;
+    border-radius: 40px / 40px;
+    padding: 1%;
 }
-.icone-recherche{
+#recherche h2{
+    background-color: #0065FC;
+    color: white;
+}
+.ifa-money-bill-wave{
     margin-right: 5px;
+    background: #F2F2F2;
 }
 
 /* Filtres*/
@@ -75,24 +83,61 @@ nav a:hover{
 #éco{
     display: flex;
     align-items: center;
+    border: 1px black solid;
+    border-radius: 20px;
+}
+.iconeéconomique{
+    background:  #F2F2F2;
 }
 #familial{
     display: flex;
     align-items: center;
+    border: 1px black solid;
+    border-radius: 20px;
 }
 #romantique{
     display: flex;
     align-items: center;
+    border: 1px black solid;
+    border-radius: 20px;
 }
 #animaux{
     display: flex;
     align-items: center;
+    border: 1px black solid;
+    border-radius: 20px;
 }
 #info{
     display: flex;
     align-items: center;
     width: 90%;
     margin: auto;
+}
+.iconeinfo{
+    border: 1px black solid;
+    border-radius: 50%;
+    color: #0065FC;
+}
+/* section 1*/
+#s1{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+}
+#resultats{
+    border: 1px transparent solid;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    margin: 1%;
+    width: 75%;
+    padding: 1%;
+}
+#populaires{
+    border: 1px transparent solid;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    margin: 1%;
+    padding: 1%;
 }
 
 /* Décorations pied de page */
