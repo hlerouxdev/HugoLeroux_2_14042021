@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
         <title>Trouver votre hébergement pour des vacances de rêve</title>
+        <script src="https://kit.fontawesome.com/19b5c527b2.js" crossorigin="anonymous"></script>
     </head>
     
     <body>
@@ -26,6 +27,17 @@
                     <p>En plein centre ville ou en pleine nature</p>
                 </div>
             </header>
+            <div id="recherche">
+                <i class="fas fa-map-marker-alt"></i>
+                <form action="post" action="traitement.php">
+                    <p>
+                        <input type="text" name="ville" id="ville"
+                        placeholder="Marseille, France"
+                        />
+                    </p>
+                </form>
+                <p>Rechercher</p>
+            </div>
             <footer>
                 <div id=footer-apropos>
                     <h2>A propos</h2>
