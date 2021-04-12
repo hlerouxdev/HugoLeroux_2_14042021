@@ -1,0 +1,25 @@
+@font-face
+{
+    font-family: 'Raleway';
+    src: url('Raleway-VariableFont_wght.ttf') format('truetype'),
+         url('Raleway-Italic-VariableFont_wght.ttf') format('truetype'),
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+#bloc-page{
+    width: 90%;
+    margin: auto;
+}
+
+#entête{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+
+}
