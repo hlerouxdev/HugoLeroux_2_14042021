@@ -4,18 +4,13 @@
     font-family: 'Raleway';
     src: url('Raleway-VariableFont_wght.ttf') format('truetype'),
          url('Raleway-Italic-VariableFont_wght.ttf') format('truetype'),
-    font-weight: normal;
-    font-style: normal;
 }
 
 /* Réglages généraux */
 body{
     font-family: 'Raleway', sans-serif;
 }
-#bloc-page{
-    width: 90%;
-    margin: auto;
-}
+
 a{
     text-decoration: none;
 }
@@ -27,19 +22,81 @@ a :hover{
 #entête{
     display: flex;
     justify-content: space-between;
+    width: 90%;
+    margin: auto;
 }
 
+/* Navigation */
 nav{
     display: flex;
-
 }
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+nav li{
+    margin-right: 15px;
+}
+nav a{
+    font-size: 1.5em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+}
+
+/* Titre */
+#titrepage{
+    width: 90%;
+    margin: auto;
+}
+
+/* Recherche*/
 #recherche{
     display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+.icone-recherche{
+    margin-right: 5px;
+}
+
+/* Filtres*/
+#filtres{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+#éco{
+    display: flex;
+    align-items: center;
+}
+#familial{
+    display: flex;
+    align-items: center;
+}
+#romantique{
+    display: flex;
+    align-items: center;
+}
+#animaux{
+    display: flex;
+    align-items: center;
+}
+#info{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
 }
 
 /* Décorations pied de page */
 footer{
-    display: flex;
     background-color: #F2F2F2;
 }
 footer ul{
@@ -48,6 +105,11 @@ footer ul{
 }
 footer a{
     color: black;
+}
+#footer-content{
+    display: flex;
+    width: 90%;
+    margin: auto
 }
 #footer-apropos{
     width: 33%;
