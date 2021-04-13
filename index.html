@@ -9,58 +9,58 @@
     
     <body>
         <div id="bloc-page">
-            <header>
-                <div id=entête>
-                    <div id="logo">
-                        <img src="images/logo/Reservia.svg" alt="logo Reservia=" />
-                    </div>
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">Hébergements</a></li>
-                            <li><a href="#">Activités</a></li>
-                            <li><a href="#">S'inscrire</a></li>
-                        </ul>
-                     </nav>
+            <nav>
+                <div id="logo">
+                    <img src="images/logo/Reservia.svg" alt="logo Reservia=" />
                 </div>
+                <ul>
+                    <li><a href="index.html">Hébergements</a></li>
+                    <li><a href="#">Activités</a></li>
+                    <li><a href="#">S'inscrire</a></li>
+                </ul>
+            </nav>
+            <header>
                 <div id="titrepage">
                     <h1>Trouver votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
                 </div>
+                    <div id="recherche">
+                        <i class="fas fa-map-marker-alt icone-recherche"></i>
+                        <form action="post" action="traitement.php">
+                            <p>
+                                <input type="text" name="ville" id="ville"
+                                placeholder="Marseille, France"
+                                />
+                            </p>
+                        </form>
+                        <h2>Rechercher</h2>
+                    </div>
+                <div id="filtres">
+                    <h2>Filtres</h2>
+                    <div id="boutton-filtres">
+                        <div id="éco">
+                            <i class="fas fa-money-bill-wave iconeéconomique"></i>
+                            <h2>Économique</h2>
+                        </div>
+                        <div id="familial">
+                            <i class="fas fa-child iconefamilial"></i>
+                            <h2>Familial</h2>
+                        </div>
+                        <div id="romantique">
+                            <i class="fas fa-heart iconeromantique"></i>
+                            <h2>Romantique</h2>
+                        </div>
+                        <div id="animaux">
+                            <i class="fas fa-dog"></i>
+                            <h2>Animaux autorisés</h2>
+                        </div>
+                    </div>
+                </div>
+                <div id="info">
+                    <i class="fas fa-info iconeinfo"></i>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
             </header>
-            <div id="recherche">
-                <i class="fas fa-map-marker-alt icone-recherche"></i>
-                <form action="post" action="traitement.php">
-                    <p>
-                        <input type="text" name="ville" id="ville"
-                        placeholder="Marseille, France"
-                        />
-                    </p>
-                </form>
-                <h2>Rechercher</h2>
-            </div>
-            <div id="filtres">
-                <h2>Filtres</h2>
-                <div id="éco">
-                    <i class="fas fa-money-bill-wave iconeéconomique"></i>
-                    <h2>Économique</h2>
-                </div>
-                <div id="familial">
-                    <i class="fas fa-child iconefamilial"></i>
-                    <h2>Familial</h2>
-                </div>
-                <div id="romantique">
-                    <i class="fas fa-heart iconeromantique"></i>
-                    <h2>Romantique</h2>
-                </div>
-                <div id="animaux">
-                    <i class="fas fa-dog"></i>
-                    <h2>Animaux autorisés</h2>
-                </div>
-            </div>
-            <div id="info">
-                <i class="fas fa-info iconeinfo"></i>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
-            </div>
             <div id=Main-content>
                 <section id="resultats">
                     <h2>Hébergements à Marseille</h2>

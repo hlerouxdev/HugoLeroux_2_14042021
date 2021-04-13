@@ -22,6 +22,7 @@ a :hover{
     flex-direction: column;
     width: 95%;
     justify-content: center;
+    border: 1px green solid;
 }
 
 /* Décorations entête */
@@ -162,6 +163,8 @@ footer a{
 #footer-content{
     display: flex;
     width: 90%;
+    justify-content: center;
+    border: 1px black solid;
 }
 #footer-apropos{
     width: 33%;
