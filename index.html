@@ -24,34 +24,34 @@
                     <h1>Trouver votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
                 </div>
-                    <div id="recherche">
-                        <i class="fas fa-map-marker-alt icone-recherche"></i>
-                        <form action="post" action="traitement.php">
-                            <p>
-                                <input type="text" name="ville" id="ville"
-                                placeholder="Marseille, France"
-                                />
-                            </p>
-                        </form>
-                        <h2>Rechercher</h2>
-                    </div>
+                <div id="recherche">
+                    <i class="fas fa-map-marker-alt icone-recherche"></i>
+                    <form action="post" action="traitement.php">
+                        <p>
+                            <input type="text" name="ville" id="ville"
+                            placeholder="Marseille, France"
+                            />
+                        </p>
+                    </form>
+                    <h2>Rechercher</h2>
+                </div>
                 <div id="filtres">
                     <h2>Filtres</h2>
-                    <div id="boutton-filtres">
-                        <div id="éco">
-                            <i class="fas fa-money-bill-wave iconeéconomique"></i>
+                    <div id="bouttons-filtres">
+                        <div class="bouttons">
+                            <i class="fas fa-money-bill-wave iconefiltres"></i>
                             <h2>Économique</h2>
                         </div>
-                        <div id="familial">
-                            <i class="fas fa-child iconefamilial"></i>
+                        <div class="bouttons">
+                            <i class="fas fa-child iconefiltres"></i>
                             <h2>Familial</h2>
                         </div>
-                        <div id="romantique">
-                            <i class="fas fa-heart iconeromantique"></i>
+                        <div class="bouttons">
+                            <i class="fas fa-heart iconefiltres"></i>
                             <h2>Romantique</h2>
                         </div>
-                        <div id="animaux">
-                            <i class="fas fa-dog"></i>
+                        <div class="bouttons">
+                            <i class="fas fa-dog iconefiltres"></i>
                             <h2>Animaux autorisés</h2>
                         </div>
                     </div>
@@ -64,18 +64,22 @@
             <div id=Main-content>
                 <section id="resultats">
                     <h2>Hébergements à Marseille</h2>
+                    <section id="résultats-content">
+
+                    </section>
                     <h3>Afficher plus</h3>
                 </section>
                 <section id="populaires">
                     <h2>Les plus populaires</h2>
-                </dsection>
-            </div>
-            <div id="activités">
-                    <h2>Activités à Marseille</h2>
                 </section>
-                <section id="activités-content">
+            
+                <div id="activités">
+                        <h2>Activités à Marseille</h2>
+                    </section>
+                    <section id="activités-content">
 
-                </section>
+                    </section>
+                </div>
             </div>
         </div>
         <footer>

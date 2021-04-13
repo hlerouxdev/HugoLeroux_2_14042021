@@ -36,6 +36,7 @@ a :hover{
 /* Navigation */
 nav{
     display: flex;
+    justify-content: space-between;
 }
 nav ul{
     list-style-type: none;
@@ -64,7 +65,8 @@ nav a:hover{
 #recherche{
     display: flex;
     align-items: center;
-    margin: auto;
+    justify-content: space-around;
+    width: 20%;
     border: 1px black solid;
     border-radius: 40px / 40px;
     padding: 2px;
@@ -73,43 +75,24 @@ nav a:hover{
     background-color: #0065FC;
     color: white;
 }
-.ifa-money-bill-wave{
-    margin-right: 5px;
-    background: #F2F2F2;
-}
 
 /* Filtres*/
 #filtres{
     display: flex;
     align-items: center;
-    margin: auto;
+    width: 50%;
     justify-content: space-between;
 }
-#éco{
+#bouttons-filtres{
     display: flex;
     align-items: center;
-    border: 1px black solid;
-    border-radius: 20px/20PX;
-    padding-inline: 20px;
+    margin: auto;
+    justify-content: space-around;
 }
-.iconeéconomique{
+.icone{
     background:  #F2F2F2;
 }
-#familial{
-    display: flex;
-    align-items: center;
-    border: 1px black solid;
-    border-radius: 20px;
-    padding-inline: 20px;
-}
-#romantique{
-    display: flex;
-    align-items: center;
-    border: 1px black solid;
-    border-radius: 20px;
-    padding-inline: 20px;
-}
-#animaux{
+.bouttons{
     display: flex;
     align-items: center;
     border: 1px black solid;
@@ -132,6 +115,8 @@ nav a:hover{
 #main-content{
     display: flex;
     flex-direction: row;
+    justify-content: left;
+    align-items: center;
 }
 #resultats{
     border: 1px transparent solid;
@@ -162,7 +147,7 @@ footer a{
 }
 #footer-content{
     display: flex;
-    width: 90%;
+    width: 95%;
     justify-content: center;
     border: 1px black solid;
 }
