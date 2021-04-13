@@ -17,12 +17,18 @@ a{
 a :hover{
     color: blue;
 }
+#bloc-page{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    justify-content: center;
+}
 
 /* Décorations entête */
 #entête{
     display: flex;
+    width: 100%;
     justify-content: space-between;
-    width: 90%;
     margin: auto;
 }
 
@@ -50,7 +56,6 @@ nav a:hover{
 
 /* Titre */
 #titrepage{
-    width: 90%;
     margin: auto;
 }
 
@@ -58,11 +63,10 @@ nav a:hover{
 #recherche{
     display: flex;
     align-items: center;
-    width: 90%;
     margin: auto;
     border: 1px black solid;
     border-radius: 40px / 40px;
-    padding: 1%;
+    padding: 2px;
 }
 #recherche h2{
     background-color: #0065FC;
@@ -77,14 +81,15 @@ nav a:hover{
 #filtres{
     display: flex;
     align-items: center;
-    width: 90%;
     margin: auto;
+    justify-content: space-between;
 }
 #éco{
     display: flex;
     align-items: center;
     border: 1px black solid;
-    border-radius: 20px;
+    border-radius: 20px/20PX;
+    padding-inline: 20px;
 }
 .iconeéconomique{
     background:  #F2F2F2;
@@ -94,50 +99,53 @@ nav a:hover{
     align-items: center;
     border: 1px black solid;
     border-radius: 20px;
+    padding-inline: 20px;
 }
 #romantique{
     display: flex;
     align-items: center;
     border: 1px black solid;
     border-radius: 20px;
+    padding-inline: 20px;
 }
 #animaux{
     display: flex;
     align-items: center;
     border: 1px black solid;
     border-radius: 20px;
+    padding-inline: 20px;
 }
 #info{
     display: flex;
     align-items: center;
-    width: 90%;
-    margin: auto;
+    justify-content: space-around;
+    width: 25%;
 }
 .iconeinfo{
-    border: 1px black solid;
-    border-radius: 50%;
+    border: 1px #F2F2F2 solid;
+    border-radius: 1000%;
     color: #0065FC;
+    padding: 6px 12px 6px;
 }
 /* section 1*/
-#s1{
+#main-content{
     display: flex;
-    width: 90%;
-    justify-content: space-around;
+    flex-direction: row;
 }
 #resultats{
     border: 1px transparent solid;
     background-color: #F2F2F2;
     border-radius: 20px;
-    margin: 1%;
     width: 75%;
-    padding: 1%;
 }
 #populaires{
     border: 1px transparent solid;
+    width: 25%;
     background-color: #F2F2F2;
     border-radius: 20px;
-    margin: 1%;
-    padding: 1%;
+}
+#activités{
+    border: 1px black solid;
 }
 
 /* Décorations pied de page */
@@ -154,7 +162,6 @@ footer a{
 #footer-content{
     display: flex;
     width: 90%;
-    margin: auto
 }
 #footer-apropos{
     width: 33%;
