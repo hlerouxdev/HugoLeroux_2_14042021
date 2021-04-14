@@ -22,7 +22,7 @@ a :hover{
     flex-direction: column;
     width: 95%;
     justify-content: center;
-    border: 1px green solid;
+    margin: auto;
 }
 
 /* Décorations entête */
@@ -118,7 +118,7 @@ nav a:hover{
     justify-content: left;
     align-items: center;
 }
-#resultats{
+#hébergements{
     border: 1px transparent solid;
     background-color: #F2F2F2;
     border-radius: 20px;
@@ -131,7 +131,15 @@ nav a:hover{
     border-radius: 20px;
 }
 #activités{
-    border: 1px black solid;
+    border: 1px transparent solid;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    width: 75%;
+}
+#activités-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Décorations pied de page */
@@ -148,8 +156,8 @@ footer a{
 #footer-content{
     display: flex;
     width: 95%;
+    margin: auto;
     justify-content: center;
-    border: 1px black solid;
 }
 #footer-apropos{
     width: 33%;
