@@ -23,8 +23,11 @@ a :hover{
     display: flex;
     flex-direction: column;
     width: 95%;
+    padding-bottom: 20px;
 }
-
+a :visited{
+    color: black;
+}
 /* Navigation */
 nav{
     display: flex;
@@ -171,6 +174,7 @@ nav a:hover{
 .hébergements-bloc{
     display: flex;
     justify-content: space-around;
+    width: 90%;
 }
 #hébergements-content{
     display: flex;
@@ -186,6 +190,7 @@ nav a:hover{
     border-radius: 20px;
     box-shadow: black 5px 5px 10px;
     height: 300px;
+    margin-bottom: 20px;
 }
 
 .starblue{
@@ -199,11 +204,31 @@ nav a:hover{
     width: 31.31%;
     background-color: #F2F2F2;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+#populairesbloc{
+    width: 90%;
 }
 #populaires-head{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+#populaires-liens{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+}
+.populairesclick{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: white 1px solid;
+    border-radius: 20px;
+    box-shadow: black 5px 5px 10px;
+    margin-bottom: 20px;
+    height: 28%;
 }
 .fa-chart-line{
     font-size: 1.5em;
@@ -214,13 +239,50 @@ nav a:hover{
     display: flex;
     flex-direction: column;
 }
-
+#activités a :visited{
+    color: black;
+}
+#activitésbloc{
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+}
+.activitésgroupe{
+    display: flex;
+    justify-content: space-between;
+    width: 48%;
+}
+.activitéessousgroupe{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.activitéslienl{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px transparent;
+    border-radius: 10px;
+    box-shadow: black 5px 5px 20px;
+}
+.activitéslienr{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px transparent;
+    border-radius: 10px;
+    box-shadow: black 5px 5px 20px;
+    height: 45%;
+}
 /* Décorations pied de page */
 footer{
     background-color: #F2F2F2;
     width: 100%;
     display: flex;
     justify-content: center;
+    padding-top: 10px;
 }
 footer ul{
     list-style-type: none;
