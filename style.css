@@ -13,20 +13,16 @@ body{
     flex-direction: column;
     align-items: center;
 }
-a{
+a, a :visited{
     text-decoration: none;
-}
-a :hover{
-    color: blue;
+    color: inherit;
 }
 #bloc-page{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     width: 95%;
     padding-bottom: 20px;
-}
-a :visited{
-    color: black;
 }
 /* Navigation */
 nav{
@@ -46,10 +42,7 @@ nav a{
     padding-bottom: 3px;
     text-decoration: none;
 }
-nav a:hover{
-    color: #0065FC;
-    border-bottom: 3px solid #0065FC;
-}
+
 #liensnav{
     display: flex;
     width: 31.31%;
@@ -126,6 +119,7 @@ nav a:hover{
 }
 #bouttons-filtres{
     display: flex;
+    flex-wrap: wrap;
     height: 75px;
 }
 .bouttons{
@@ -133,6 +127,13 @@ nav a:hover{
     align-content: center;
     border: 1px #F2F2F2 solid;
     border-radius: 40px;
+}
+.bouttons h2{
+    margin-inline: 10px;
+}
+.bouttonsh :hover{
+    color: white;
+    background-color: #0065FC;
 }
 .iconefiltres{
     color: #0065FC;
@@ -166,31 +167,49 @@ nav a:hover{
 #hébergements{
     display: flex;
     justify-content: center;
+    align-items: center;
     border: 1px transparent solid;
     background-color: #F2F2F2;
     border-radius: 20px;
     width: 65.65%;
 }
-.hébergements-bloc{
-    display: flex;
-    justify-content: space-around;
-    width: 90%;
+#hébergements-bloc{
+    width: 95%;
+    height: 95%;
 }
 #hébergements-content{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    
 }
 .hébermentsclick{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 28%;
     background-color: white;
     border: white 1px solid;
     border-radius: 20px;
-    box-shadow: black 5px 5px 10px;
+    box-shadow: grey 5px 5px 20px;
     height: 300px;
     margin-bottom: 20px;
+}
+.hébergementsbox{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 95%;
+}
+.hébergementsbox h3{
+    margin-bottom: 0px;
+}
+.hébergementsimage{
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+    border: transparent;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .starblue{
@@ -218,17 +237,50 @@ nav a:hover{
 #populaires-liens{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 90%;
+}
+.populairesbloc{
+    height: 95%;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
 }
 .populairesclick{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     border: white 1px solid;
     border-radius: 20px;
-    box-shadow: black 5px 5px 10px;
+    box-shadow: grey 5px 5px 20px;
     margin-bottom: 20px;
     height: 28%;
+    width: 100%;
+}
+.populairesdesc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    margin-left: 1%;
+    height: 100%;
+}
+.populairestext{
+    display: flex;
+    flex-direction: column;
+}
+.populairestext h3{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.populairesimage{
+    width: 45%;
+    height: 100%;
+    object-fit: cover;
+    border: transparent;
+    border-radius: 20px 0px 0px 20px;
 }
 .fa-chart-line{
     font-size: 1.5em;
@@ -245,7 +297,7 @@ nav a:hover{
 #activitésbloc{
     display: flex;
     justify-content: space-between;
-    height: 500px;
+    height: 400px;
 }
 .activitésgroupe{
     display: flex;
@@ -265,7 +317,7 @@ nav a:hover{
     justify-content: space-between;
     border: 1px transparent;
     border-radius: 10px;
-    box-shadow: black 5px 5px 20px;
+    box-shadow: grey 5px 5px 20px;
 }
 .activitéslienr{
     display: flex;
@@ -273,8 +325,23 @@ nav a:hover{
     justify-content: space-between;
     border: 1px transparent;
     border-radius: 10px;
-    box-shadow: black 5px 5px 20px;
+    box-shadow: grey 5px 5px 20px;
     height: 45%;
+}
+.activitésbox{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.activitésbox h3{
+    margin-left: 10px;
+}
+.activitésimage{
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    border: transparent;
+    border-radius: 10px 10px 0px 0px;
 }
 /* Décorations pied de page */
 footer{
