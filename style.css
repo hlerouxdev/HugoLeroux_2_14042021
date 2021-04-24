@@ -25,6 +25,7 @@ a, a :visited{
     padding-bottom: 20px;
 }
 /* Navigation */
+
 nav{
     display: flex;
     flex-direction: row;
@@ -42,11 +43,16 @@ nav a{
     padding-bottom: 3px;
     text-decoration: none;
 }
-
+#logo-hebergements-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
 #lien-nav-box{
     display: flex;
-    width: 31.31%;
-    justify-content: space-evenly;
+    width: 15%;
+    justify-content: space-between;
 }
 #lien-hebergements{
     color: #0065FC;
