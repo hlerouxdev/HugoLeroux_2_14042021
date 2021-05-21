@@ -47,9 +47,7 @@ nav a{
 nav a:hover{
     color: #0065FC;
     border-top: 3px solid #0065FC;
-    border-width: 100%;
-    margin-top: -20px;
-    padding-top: 17px;
+    padding-top: 20px;
 }
 #logo-hebergements-box{
     display: flex;
@@ -57,7 +55,8 @@ nav a:hover{
 }
 #lien-nav-box{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    width: 25%;
 }
 
 #lien-inscription{
@@ -66,6 +65,10 @@ nav a:hover{
 }
 
 /* Titre */
+header p{
+    font-size: 1.2em;
+}
+
 #titrepage{
     padding-bottom: 20px;
 }
@@ -107,7 +110,7 @@ nav a:hover{
 .formborder-less{
     border: none;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.2em;
     outline: none;
     width: 100%;
 }
@@ -126,25 +129,26 @@ nav a:hover{
 /* Filtres*/
 #filtres{
     display: flex;
-    height: 75px;
+    height: 60px;
     align-content: center;
-    padding-top: 20px;
+    margin-top: 20px;
 }
 #bouttons-filtres{
     display: flex;
     flex-wrap: wrap;
-    height: 75px;
+    height: 60px;
     padding-inline-start: 20px;
 }
 .bouttons{
     display: flex;
     align-content: center;
-    border: 2px #F2F2F2 solid;
-    border-radius: 40px;
+    border: 1px #F2F2F2 solid;
+    height: 60px;
+    border-radius: 30px;
     margin-right: 20px;
 }
 .bouttons h2{
-    margin-inline: 25px;
+    margin: 17px;
 }
 /* Changements des filtres au survol*/
 .bouttons:hover{     
@@ -154,14 +158,14 @@ nav a:hover{
 /* réglages du background circulaire pour les icones des filtres */
 .iconefiltres{
     color: #0065FC;
-    height: 75px;
-    width:75px;
+    height: 60px;
+    width:60px;
     background-color: #DEEBFF;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
 /* Section info */
@@ -187,6 +191,7 @@ nav a:hover{
     flex-direction: row;
     justify-content: space-between;
     margin-top: 20px;
+    height: 750px;
 }
 /* section hébergements */
 #hebergements{
@@ -257,7 +262,7 @@ nav a:hover{
 }
 .stars{
     height: 20%;
-    margin: 0%;
+    margin: 0px;
 }
 .starblue{
     color: #0065FC;
@@ -273,6 +278,7 @@ nav a:hover{
     background-color: #F2F2F2;
     border-radius: 20px;
     width: 30%;
+    height: 100%;
 }
 #populairesbloc{
     width: 80%;
@@ -294,6 +300,7 @@ nav a:hover{
     height: 95%;
     width: 98%;
     display: flex;
+    align-items: center;
 }
 .populairesclick{
     display: flex;
@@ -313,7 +320,7 @@ nav a:hover{
     justify-content: space-between;
     width: 40%;
     margin-left: 10%;
-    height: 100%;
+    height: 85%;
 }
 .populairestext{
     display: flex;
