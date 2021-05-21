@@ -55,7 +55,7 @@ nav a:hover{
 }
 #lien-nav-box{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 25%;
 }
 
@@ -298,7 +298,7 @@ header p{
 }
 .populairesbloc{
     height: 95%;
-    width: 98%;
+    width: 97.5%;
     display: flex;
     align-items: center;
 }
