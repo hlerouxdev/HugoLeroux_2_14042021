@@ -219,7 +219,7 @@ header p{
     justify-content: space-between;
 }
 /* Liens de la partie hébergements */
-.heberments-link{
+.hebergements-link{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -232,7 +232,7 @@ header p{
 }
 
 /* centrage du contenu de chaque liens par rapport à sa box */
-.heberments-box{
+.hebergements-box{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -444,4 +444,97 @@ footer a{
 }
 .footer-elements{
     width: 30%;
+}
+
+@media all and (max-device-width: 480px){
+    body{
+        font-size: 2em;
+    }
+    #bloc-page{
+        width: 100%;
+    }
+    #logo-hebergements-box img{
+        height: 100px;
+        width: auto;
+    }
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #lien-nav-box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #recherche{
+        width: 90%;
+        justify-content: center;
+    }
+    #bouttons-filtres{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #main-content{
+        height: fit-content;
+        flex-direction: column-reverse;
+        font-size: 1.2em;
+    }
+    #hebergements{
+        width: 100%;
+        background: transparent;
+    }
+    #hebergements-content{
+        height: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hebergements-link{
+        width: 100%;
+        height: 500px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    #populaires{
+        width: 100%;
+        height: 1600px;
+    }
+    #populairesbloc{
+        height: 1580px;
+        width: 90%;
+    }
+    .populairesclick{
+        height: 500px;
+    }
+    #activites-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #activites-bloc{
+        display: flex;
+        flex-direction: column;
+    }
+    .activitesgroupe{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .activiteessousgroupe{
+        width: 90%;
+    }
+    .activiteslienl{
+        width: 100%;
+        display: flex;
+        flex-direction: column
+        ;
+    }
+    .activitesbox{
+        height: 450px;
+        width: 100%;
+    }
+    footer{
+        display: none;
+    }
 }
