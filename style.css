@@ -452,7 +452,7 @@ footer a{
 }
 
 /* Format Mobile*/
-@media all and (max-device-width: 480px){
+@media screen and (max-device-width: 480px){
     body{
         font-size: 2em;
     }
@@ -949,5 +949,6 @@ footer a{
     }
     .footer-elements{
         width: 33%;
+        
     }
   }
