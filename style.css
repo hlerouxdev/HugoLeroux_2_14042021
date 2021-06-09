@@ -155,7 +155,7 @@ header p{
 /* Changements des filtres au survol*/
 .bouttons:hover{     
     border: transparent;
-    box-shadow: black 0px 0px 10px;
+    box-shadow: grey 0px 0px 10px;
 }
 /* réglages du background circulaire pour les icones des filtres */
 .iconefiltres{
@@ -230,7 +230,7 @@ header p{
     background-color: white;
     border: white 1px solid;
     border-radius: 20px;
-    box-shadow: grey 5px 5px 20px;
+    box-shadow: rgb(192, 192, 192) 0px 0px 10px;
 }
 
 /* centrage du contenu de chaque liens par rapport à sa box */
@@ -311,7 +311,7 @@ header p{
     background-color: white;
     border: white 1px solid;
     border-radius: 20px;
-    box-shadow: grey 5px 5px 20px;
+    box-shadow: rgb(192, 192, 192) 0px 0px 10px;
     margin-bottom: 20px;
     height: 28%;
     width: 100%;
@@ -350,6 +350,9 @@ header p{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+#activites h2{
+    width: 90%;
+}
 #activites a :visited{
     color: black;
 }
@@ -376,7 +379,7 @@ header p{
     justify-content: space-between;
     border: 1px transparent;
     border-radius: 20px;
-    box-shadow: grey 5px 5px 20px;
+    box-shadow: #F2F2F2 5px 5px 20px;
 }
 .activiteslienlu{
     display: flex;
@@ -384,7 +387,7 @@ header p{
     justify-content: space-between;
     border: 1px transparent;
     border-radius: 10px;
-    box-shadow: grey 5px 5px 20px;
+    box-shadow: #F2F2F2 0px 5px 20px;
     height: 52%;
 }
 .activiteslienld{
@@ -393,7 +396,7 @@ header p{
     justify-content: space-between;
     border: 1px transparent;
     border-radius: 10px;
-    box-shadow: grey 5px 5px 20px;
+    box-shadow: #F2F2F2 0px 5px 20px;
     height: 37%;
 }
 .activiteslienr{
@@ -402,7 +405,7 @@ header p{
     justify-content: space-between;
     border: 1px transparent;
     border-radius: 20px;
-    box-shadow: grey 5px 5px 20px;
+    box-shadow: #F2F2F2 0px 5px 20px;
     height: 45%;
 }
 .activitesbox{
@@ -452,10 +455,13 @@ footer a{
 @media all and (max-device-width: 480px){
     body{
         font-size: 2em;
-        width: 100%;
     }
     #bloc-page{
         width: 100%;
+    }
+    #logo-hebergements-box{
+        height: 60px;
+        align-items: flex-start;
     }
     #logo-hebergements-box img{
         height: 150px;
@@ -463,23 +469,90 @@ footer a{
     }
     nav{
         display: flex;
-        flex-wrap: wrap;
-        font-size: 1.5em;
+        flex-direction: column;
+        font-size: 1.2em;
     }
     #lien-nav-box{
         display: flex;
         flex-direction: column-reverse;
+        width: 100%;
+        align-items: flex-end;
+        height: 300px;
+        justify-content: space-between;
+        border-bottom: 5px solid #F2F2F2;
+        margin: 0px;
     }
     #lien-nav-box ul{
         display: flex;
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+        justify-content: space-around;
+        position: relative;
+        margin: 0px;
+    }
+    #navhebergements{
+        height: 50%;
+        position: absolute;
+        bottom: 0;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        margin: 0px;
+    }
+    #navactivites{
+        height: 50%;
+        position: absolute;
+        bottom: 0;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        right: 0;
+    }
+    #lien-nav-box li:hover{
+        border-bottom: solid #0065FC 5px;
+    }
+    nav a:hover{
+        border-top: transparent;
+    }
+    header{
+        display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+    #titrepage{
+        width: 90%;
     }
     #recherche{
         width: 90%;
         justify-content: center;
+        align-items: center;
     }
     #recherche h2{
         display: none;
+        height: 700px;
+    }
+    .icone-recherche{
+        height: 100%;
+        width: 150px;
+        border-radius: 50px 0 0 50px;
+        font-size: 1.5em;
+    }
+    .boutton-recherche{
+        background-color: #0065FC;
+        position: absolute;
+        right: 0;
+        height: 100%;
+        width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px 50px 50px 50px;
+    }
+    .fa-search{
+        color: white;
+        font-size: 1.5em;
     }
     /* Filtres*/
     #filtres{
@@ -509,7 +582,7 @@ footer a{
     /* Changements des filtres au survol*/
     .bouttons:hover{     
         border: transparent;
-        box-shadow: black 0px 0px 10px;
+        box-shadow: #F2F2F2 0px 0px 20px;
     }
     /* réglages du background circulaire pour les icones des filtres */
     .iconefiltres{
@@ -524,19 +597,30 @@ footer a{
         font-size: 2em;
     }
     #info{
-        height: 200px;
+        height: 100px;
+        width: 90%;
+        font-size: 1.1em;
+        align-items: flex-start;
+        margin-top: 50px;
     }
     #info p{
-        padding-left: 20px;
         margin: 0px;
     }
     /* Réglages du "i" dans la partie info*/
-    .iconeinfo{
-        font-size: 1.5em;
-        border: 1px #F2F2F2 solid;
+    #iconeinfobox{
+        border: 5px #F2F2F2 solid;
         border-radius: 50%;
+        height: 60px;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .iconeinfo{
+        font-size: 1em;
+        border: none;
         color: #0065FC;
-        padding: 6px 12px 6px;
+        padding: 0px;
     }
     #main-content{
         height: fit-content;
@@ -562,9 +646,14 @@ footer a{
         margin-top: 10px;
         margin-bottom: 20px;
     }
+    .hebergements-box{
+        width: 98%;
+        height: 96.5%;
+    }
     #populaires{
         width: 100%;
-        height: 1600px;
+        height: 1500px;
+        border-radius: 0px;
     }
     #populairesbloc{
         height: 1280px;
@@ -576,10 +665,14 @@ footer a{
     .populairesdesc{
         width: 50%;
     }
+    #activites{
+        align-items: center;
+    }
     #activites-content{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 90%;
     }
     #activitesbloc{
         display: flex;
@@ -626,7 +719,8 @@ footer a{
     #footer-content{
         display: flex;
         flex-direction: column;
-        font-size: 1.2em;
+        justify-content: center;
+        font-size: 0.7em;
     }
     .footer-elements{
         width: 100%;
