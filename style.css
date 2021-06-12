@@ -454,30 +454,29 @@ footer a{
 /* Format Mobile*/
 @media screen and (max-device-width: 480px){
     body{
-        font-size: 2em;
+        margin: 0;
     }
     #bloc-page{
         width: 100%;
     }
     #logo-hebergements-box{
-        height: 60px;
+        height: 20px;
         align-items: flex-start;
     }
     #logo-hebergements-box img{
-        height: 150px;
+        height: 50px;
         width: auto;
     }
     nav{
         display: flex;
         flex-direction: column;
-        font-size: 1.2em;
     }
     #lien-nav-box{
         display: flex;
         flex-direction: column-reverse;
         width: 100%;
         align-items: flex-end;
-        height: 300px;
+        height: 100px;
         justify-content: space-between;
         border-bottom: 5px solid #F2F2F2;
         margin: 0px;
@@ -520,46 +519,58 @@ footer a{
         display: flex;
         flex-direction: column;
         align-items: center;
+        font-size: 1em;
     }
     #titrepage{
         width: 90%;
+        font-size: 0.9em;
+    }
+    #titrepage h1{
+        font-size: 1.7em;
     }
     #recherche{
         width: 90%;
         justify-content: center;
         align-items: center;
+        height: 50px;
     }
     #recherche h2{
         display: none;
-        height: 700px;
     }
     .icone-recherche{
         height: 100%;
-        width: 150px;
-        border-radius: 50px 0 0 50px;
-        font-size: 1.5em;
+        width: 50px;
+        border-radius: 15px 0 0 15px;
+        font-size: 1.2em;
     }
     .boutton-recherche{
         background-color: #0065FC;
         position: absolute;
         right: 0;
         height: 100%;
-        width: 150px;
+        width: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 50px 50px 50px 50px;
+        border-radius: 15px 15px 15px 15px;
     }
     .fa-search{
         color: white;
-        font-size: 1.5em;
+        font-size: 1.2em;
+    }
+    #recherche form{
+        width: 100%;
+        padding-right: 0;
+        padding-left: 65px;
+        font-size: 0.9em;
     }
     /* Filtres*/
     #filtres{
         display: flex;
         flex-direction: column;
-        height: 550px;
+        height: 280px;
         width: 90%;
+        font-size: 0.9em;
     }
     #bouttons-filtres{
         display: flex;
@@ -570,14 +581,14 @@ footer a{
     .bouttons{
         display: flex;
         align-items: center;
-        border: 5px #F2F2F2 solid;
-        height: 120px;
+        border: 2px #F2F2F2 solid;
+        height: 50px;
         border-radius: 70px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     .bouttons h2{
         margin: 0px;
-        padding-inline: 20px;
+        padding-inline: 10px;
     }
     /* Changements des filtres au survol*/
     .bouttons:hover{     
@@ -587,31 +598,31 @@ footer a{
     /* réglages du background circulaire pour les icones des filtres */
     .iconefiltres{
         color: #0065FC;
-        height: 120px;
-        width: 120px;
+        height: 50px;
+        width: 50px;
         background-color: #DEEBFF;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 2em;
     }
     #info{
-        height: 100px;
+        height: 50px;
         width: 90%;
-        font-size: 1.1em;
         align-items: flex-start;
         margin-top: 50px;
     }
     #info p{
         margin: 0px;
+        font-size: 1em;
+        padding-left: 10px;
     }
     /* Réglages du "i" dans la partie info*/
     #iconeinfobox{
-        border: 5px #F2F2F2 solid;
+        border: 1px #F2F2F2 solid;
         border-radius: 50%;
-        height: 60px;
-        width: 60px;
+        height: 30px;
+        width: 40px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -625,7 +636,6 @@ footer a{
     #main-content{
         height: fit-content;
         flex-direction: column-reverse;
-        font-size: 1.2em;
     }
     #hebergements{
         width: 100%;
@@ -642,7 +652,7 @@ footer a{
     }
     .hebergements-link{
         width: 100%;
-        height: 500px;
+        height: 200px;
         margin-top: 10px;
         margin-bottom: 20px;
     }
@@ -652,15 +662,14 @@ footer a{
     }
     #populaires{
         width: 100%;
-        height: 1500px;
+        height: 650px;
         border-radius: 0px;
     }
     #populairesbloc{
-        height: 1280px;
         width: 90%;
     }
     .populairesclick{
-        height: 400px;
+        height: 160px;
     }
     .populairesdesc{
         width: 50%;
@@ -677,12 +686,12 @@ footer a{
     #activitesbloc{
         display: flex;
         flex-direction: column;
-        height: 3000px;
+        height: 1300px;
         justify-content: flex-start;
     }
     #activitesbloc a{
-        margin-bottom: 50px;
-        border-radius: 50px;
+        margin-bottom: 20px;
+        border-radius: 25px;
     }
     .activitesgroupe{
         display: flex;
@@ -704,29 +713,27 @@ footer a{
         justify-content: flex-start;
     }
     .activitesbox{
-        height: 450px;
+        height: 200px;
         width: 100%;
     }
     .activitesbox h3{
-        height: 130px;
-        font-size: 1.5em;
-        padding-left: 50px;
+        height: 60px;
+        padding-left: 20px;
     }
     .activitesimage{
-        height: 320px;
-        border-radius: 50px 50px 0px 0px;
+        height: 140px;
+        border-radius: 25px 25px 0px 0px;
     }
     #footer-content{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        font-size: 0.7em;
     }
     .footer-elements{
         width: 100%;
     }
-    .footer-elements ul{
-        line-height: 100px;
+    footer h2{
+        font-size: 1.2em;
     }
 }
 
