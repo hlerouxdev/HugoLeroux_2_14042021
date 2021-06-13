@@ -58,7 +58,7 @@ nav a:hover{
     width: 25%;
 }
 
-#lien-inscription{
+#inscription-link{
     font-weight: bold;
     color: #0065FC;
 }
@@ -68,12 +68,12 @@ header p{
     font-size: 1.2em;
 }
 
-#titrepage{
+#page-title{
     padding-bottom: 20px;
 }
 
-/* Recherche*/
-#recherche{
+/* search*/
+#search{
     display: flex;
     align-items: center;
     width: 475px;
@@ -81,18 +81,18 @@ header p{
     border-radius: 25px;
     position: relative;
 }
-#recherche form{
+#search form{
     width: calc(100% - 240px - 20px);
     padding-left: 85px;
     padding-right: 10px;
 }
 /* couleur du champs de texte */
-#recherche ::placeholder{
+#search ::placeholder{
     color: black;
 }
 
-/* réglage du faux boutton recherche */
-#recherche h2{
+/* réglage du faux boutton search */
+#search h2{
     background-color: #0065FC;
     color: white;
     position: absolute;
@@ -113,7 +113,7 @@ header p{
     outline: none;
     width: 100%;
 }
-.icone-recherche{
+.search-icone{
     background-color: #F2F2F2;
     height: 100%;
     width: 75px;
@@ -124,7 +124,7 @@ header p{
     left: 0;
     border-radius: 25px 0 0 25px;
 }
-.boutton-recherche{
+.search-button{
     display: none;
 }
 
@@ -135,13 +135,13 @@ header p{
     align-content: center;
     margin-top: 20px;
 }
-#bouttons-filtres{
+#filtres-bloc{
     display: flex;
     flex-wrap: wrap;
     height: 60px;
     padding-inline-start: 20px;
 }
-.bouttons{
+.buttons{
     display: flex;
     align-content: center;
     border: 1px #F2F2F2 solid;
@@ -149,16 +149,16 @@ header p{
     border-radius: 30px;
     margin-right: 20px;
 }
-.bouttons h2{
+.buttons h2{
     margin: 17px;
 }
 /* Changements des filtres au survol*/
-.bouttons:hover{     
+.buttons:hover{     
     border: transparent;
     box-shadow: grey 0px 0px 10px;
 }
 /* réglages du background circulaire pour les icones des filtres */
-.iconefiltres{
+.filtres-icone{
     color: #0065FC;
     height: 60px;
     width:60px;
@@ -181,7 +181,7 @@ header p{
     padding-left: 20px;
 }
 /* Réglages du "i" dans la partie info*/
-.iconeinfo{
+.info-icone{
     border: 1px #F2F2F2 solid;
     border-radius: 50%;
     color: #0065FC;
@@ -282,7 +282,7 @@ header p{
     width: 30%;
     height: 100%;
 }
-#populairesbloc{
+#populaires-box{
     width: 80%;
     height: 95%;
 }
@@ -298,13 +298,13 @@ header p{
     align-items: center;
     height: 90%;
 }
-.populairesbloc{
+.populaires-box{
     height: 95%;
     width: 97.5%;
     display: flex;
     align-items: center;
 }
-.populairesclick{
+.populaires-link{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -316,7 +316,7 @@ header p{
     height: 28%;
     width: 100%;
 }
-.populairesdesc{
+.populaires-info{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -324,11 +324,11 @@ header p{
     margin-left: 10%;
     height: 85%;
 }
-.populairestext{
+.populaires-text{
     display: flex;
     flex-direction: column;
 }
-.populairestext h3{
+.populaires-text h3{
     margin-bottom: 0px;
     margin-top: 0px;
 }
@@ -356,7 +356,7 @@ header p{
 #activites a :visited{
     color: black;
 }
-#activitesbloc{
+#activites-bloc{
     display: flex;
     justify-content: space-between;
     height: 450px;
@@ -366,13 +366,13 @@ header p{
     justify-content: space-between;
     width: 48%;
 }
-.activiteessousgroupe{
+.activites-sousgroupe{
     width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.activiteslienl{
+.activites-linkl{
     width: 45%;
     display: flex;
     flex-direction: column;
@@ -381,7 +381,7 @@ header p{
     border-radius: 20px;
     box-shadow: #F2F2F2 5px 5px 20px;
 }
-.activiteslienlu{
+.activites-linklu{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -390,7 +390,7 @@ header p{
     box-shadow: #F2F2F2 0px 5px 20px;
     height: 52%;
 }
-.activiteslienld{
+.activites-linkld{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -399,7 +399,7 @@ header p{
     box-shadow: #F2F2F2 0px 5px 20px;
     height: 37%;
 }
-.activiteslienr{
+.activites-linkr{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -408,15 +408,15 @@ header p{
     box-shadow: #F2F2F2 0px 5px 20px;
     height: 45%;
 }
-.activitesbox{
+.activites-box{
     display: flex;
     flex-direction: column;
     height: 100%;
 }
-.activitesbox h3{
+.activites-box h3{
     margin-left: 10px;
 }
-.activitesimage{ /* reglages grosses images */
+.activites-image{ /* reglages grosses images */
     width: 100%;
     height: calc(100% - 58px);
     object-fit: cover;
@@ -490,7 +490,7 @@ footer a{
         position: relative;
         margin: 0px;
     }
-    #navhebergements{
+    #nav-hebergements{
         height: 50%;
         position: absolute;
         bottom: 0;
@@ -500,7 +500,7 @@ footer a{
         left: 0;
         margin: 0px;
     }
-    #navactivites{
+    #nav-activites{
         height: 50%;
         position: absolute;
         bottom: 0;
@@ -521,29 +521,29 @@ footer a{
         align-items: center;
         font-size: 1em;
     }
-    #titrepage{
+    #page-title{
         width: 90%;
         font-size: 0.9em;
     }
-    #titrepage h1{
+    #page-title h1{
         font-size: 1.7em;
     }
-    #recherche{
+    #search{
         width: 90%;
         justify-content: center;
         align-items: center;
         height: 50px;
     }
-    #recherche h2{
+    #search h2{
         display: none;
     }
-    .icone-recherche{
+    .search-icone{
         height: 100%;
         width: 50px;
         border-radius: 15px 0 0 15px;
         font-size: 1.2em;
     }
-    .boutton-recherche{
+    .search-button{
         background-color: #0065FC;
         position: absolute;
         right: 0;
@@ -558,7 +558,7 @@ footer a{
         color: white;
         font-size: 1.2em;
     }
-    #recherche form{
+    #search form{
         width: 100%;
         padding-right: 0;
         padding-left: 65px;
@@ -572,13 +572,13 @@ footer a{
         width: 90%;
         font-size: 0.9em;
     }
-    #bouttons-filtres{
+    #filtres-bloc{
         display: flex;
         flex-wrap: wrap;
         width: 100%;
         padding-inline-start: 0px;
     }
-    .bouttons{
+    .buttons{
         display: flex;
         align-items: center;
         border: 2px #F2F2F2 solid;
@@ -586,17 +586,17 @@ footer a{
         border-radius: 70px;
         margin-bottom: 10px;
     }
-    .bouttons h2{
+    .buttons h2{
         margin: 0px;
         padding-inline: 10px;
     }
     /* Changements des filtres au survol*/
-    .bouttons:hover{     
+    .buttons:hover{     
         border: transparent;
         box-shadow: #F2F2F2 0px 0px 20px;
     }
     /* réglages du background circulaire pour les icones des filtres */
-    .iconefiltres{
+    .filtres-icone{
         color: #0065FC;
         height: 50px;
         width: 50px;
@@ -618,7 +618,7 @@ footer a{
         padding-left: 10px;
     }
     /* Réglages du "i" dans la partie info*/
-    #iconeinfobox{
+    #info-icone-box{
         border: 1px #F2F2F2 solid;
         border-radius: 50%;
         height: 30px;
@@ -627,7 +627,7 @@ footer a{
         justify-content: center;
         align-items: center;
     }
-    .iconeinfo{
+    .info-icone{
         font-size: 1em;
         border: none;
         color: #0065FC;
@@ -665,13 +665,13 @@ footer a{
         height: 650px;
         border-radius: 0px;
     }
-    #populairesbloc{
+    #populaires-box{
         width: 90%;
     }
-    .populairesclick{
+    .populaires-link{
         height: 160px;
     }
-    .populairesdesc{
+    .populaires-info{
         width: 50%;
     }
     #activites{
@@ -683,13 +683,13 @@ footer a{
         justify-content: center;
         width: 90%;
     }
-    #activitesbloc{
+    #activites-bloc{
         display: flex;
         flex-direction: column;
         height: 1300px;
         justify-content: flex-start;
     }
-    #activitesbloc a{
+    #activites-bloc a{
         margin-bottom: 20px;
         border-radius: 25px;
     }
@@ -699,28 +699,28 @@ footer a{
         width: 100%;
         justify-content: flex-start;
     }
-    .activiteessousgroupe{
+    .activites-sousgroupe{
         display: flex;
         flex-direction: column;
         width: 100%;
         justify-content: flex-start;
     }
-    .activiteslien{
+    .activites-link{
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
     }
-    .activitesbox{
+    .activites-box{
         height: 200px;
         width: 100%;
     }
-    .activitesbox h3{
+    .activites-box h3{
         height: 60px;
         padding-left: 20px;
     }
-    .activitesimage{
+    .activites-image{
         height: 140px;
         border-radius: 25px 25px 0px 0px;
     }
@@ -750,19 +750,19 @@ footer a{
     #lien-nav-box{
         width: 50%;
     }
-    #recherche{
+    #search{
         width: 100%;
     }
     #filtres{
         height: 250px;
         flex-direction: column;
     }
-    #bouttons-filtres{
+    #filtres-bloc{
         padding: 0;
         justify-content: space-between;
         align-items: center;
     }
-    .bouttons{
+    .buttons{
         margin-top: 20px;
     }
     #main-content{
@@ -778,7 +778,7 @@ footer a{
         width: 100%;
         height: 550px;
     }
-    #populairesbloc{
+    #populaires-box{
         width: 90%;
     }
     #populaires-liens{
@@ -786,7 +786,7 @@ footer a{
         flex-wrap: wrap;
         height: 400px;
     }
-    .populairesclick{
+    .populaires-link{
         width: 45%;
         height: 200px;
     }
@@ -826,7 +826,7 @@ footer a{
         position: relative;
         margin: 0px;
     }
-    #navhebergements{
+    #nav-hebergements{
         height: 50%;
         position: absolute;
         bottom: 0;
@@ -836,7 +836,7 @@ footer a{
         left: 0;
         margin: 0px;
     }
-    #navactivites{
+    #nav-activites{
         height: 50%;
         position: absolute;
         bottom: 0;
@@ -845,7 +845,7 @@ footer a{
         justify-content: center;
         right: 0;
     }
-    #lien-inscription{
+    #inscription-link{
         margin-right: 50px;
     }
     #lien-nav-box li:hover{
@@ -857,37 +857,37 @@ footer a{
     header{
         font-size: 1.5em;
     }
-    #recherche{
+    #search{
         width: 100%;
     }
-    .icone-recherche{
+    .search-icone{
         width: 100px;
     }
-    #recherche form {
+    #search form {
         padding-left: 120px;
     }
-    #recherche h2{
+    #search h2{
         width: 250px;
     }
     #filtres{
         height: 320px;
         flex-direction: column;
     }
-    #bouttons-filtres{
+    #filtres-bloc{
         padding: 0;
         justify-content: flex-start;
         align-items: center;
     }
-    #bouttons-filtres h2{
+    #filtres-bloc h2{
         margin-top: 30px;
         padding-inline: 10px;
     }
-    .bouttons{
+    .buttons{
         height: 100px;
         border-radius: 60px;
         margin-bottom: 20px;
     }
-    .iconefiltres {
+    .filtres-icone {
         height: 100px;
         width: 100px;
     }
@@ -901,7 +901,7 @@ footer a{
         width: 100%;
         height: 700px;
     }
-    #populairesbloc{
+    #populaires-box{
         width: 95%;
     }
     #populaires-liens{
@@ -909,14 +909,14 @@ footer a{
         flex-wrap: wrap;
         height: 400px;
     }
-    .populairesclick{
+    .populaires-link{
         width: 45%;
         height: 240px;
     }
     .populaireschambres{
         height: 500px;
     }
-    .populairesdesc{
+    .populaires-info{
         width: 50%;
     }
     #hebergements{
@@ -939,7 +939,7 @@ footer a{
     #activites{
         font-size: 1.5em;
     }
-    #activitesbloc{
+    #activites-bloc{
         flex-direction: column;
         height: 1100px;
     }
