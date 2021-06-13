@@ -12,12 +12,12 @@
     <body>
         <div id="bloc-page"> <!-- Bloc contenant toute la page sauf le footer pour avoir les marges à gauche à et droite -->
             <nav>
-                <div id="logo-hebergements-box">
+                <div id="logo-hebergements-box"> <!-- div contenant le Logo Reservia -->
                     <a href="index.html">
                         <img src="images/logo/Reservia.svg" alt="logo Reservia=" />
                     </a>
                 </div>
-                <div id="lien-nav-box">
+                <div id="lien-nav-box"> <!-- div contenant les liens de navigation -->
                     <ul>
                         <li id="nav-hebergements">
                             <a href="#hebergements" id="lien-hebergements">Hébergements</a>
@@ -32,29 +32,29 @@
                 </div>
             </nav>
             <header>
-                <div id="page-title">
+                <div id="page-title"> <!-- div contenant la description du site -->
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
                 </div>
-                <div id="search">
+                <div id="search"> <!-- Boîte de la bar de recherche -->
                     <div class="search-icone">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
-                    <form action="post">
+                    <form action="post"> <!-- Formulaire de la bar de recherche -->
                         <p>
                             <input type="text" name="ville" id="ville" class="formborder-less"
                             placeholder="Marseille, France" onfocus="this.value=this.value"/>
                         </p>
                     </form>
-                    <h2>Rechercher</h2>
-                    <div class="search-button">
+                    <h2>Rechercher</h2> <!-- Texte "rechercher" de la bar de recherche -->
+                    <div class="search-button"> <!-- icone de la bar de recherche pour les versions mobile et tablette -->
                         <i class="fas fa-search"></i>
                     </div>
                 </div>
-                <div id="filtres">
+                <div id="filtres"> <!-- div contenant le bloc "filtres" -->
                     <h2>Filtres</h2>
-                    <div id="filtres-bloc">
-                        <a href="#" class="buttons">
+                    <div id="filtres-bloc"> <!-- div contenant les filtres -->
+                        <a href="#" class="buttons"> <!-- lien inactif pour rendre les filtres cliquable et permettant le changement de ces derniers au hover -->
                             <div class="filtres-icone">
                                 <i class="fas fa-money-bill-wave"></i>
                             </div>
@@ -80,18 +80,19 @@
                         </a>
                     </div>
                 </div>
-                <div id="info">
+                <div id="info"> <!-- div contenant la zone info -->
                     <div id="info-icone-box">
                         <i class="fas fa-info info-icone"></i>
                     </div>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </header>
-            <div id=main-content>
+            <div id=main-content> <!-- div contenant les blocs hébergements et populaires -->
                 <section id="hebergements">
-                    <div id="hebergements-bloc">
+                    <div id="hebergements-bloc"> <!-- bloc permettant de mettre une marge autour du contenu hébergement -->
                         <h2>Hébergements à Marseille</h2>
-                        <div id="hebergements-content">
+                        <div id="hebergements-content"> <!-- div contenant les différents liens hébergements -->
+                            <!-- Nomenclatures des liens: link>box>(image/info)  -->
                             <a href="#hebergements" class="hebergements-link">
                                 <div class="hebergements-box">
                                     <img src="images/hebergements/4_small/cannebière-small.jpg" alt="Auberge de la Cannebière" class="hebergements-image" />
@@ -192,13 +193,14 @@
                         <h3>Afficher plus</h3>
                     </div>
                 </section>
-                <section id="populaires">
-                   <div id="populaires-box">
+                <section id="populaires"> <!-- Section Populaires -->
+                   <div id="populaires-content"> <!-- div contenant la box populaires pour y mettre les marges -->
                         <div id="populaires-head">
                             <h2>Les plus populaires</h2>
                             <i class="fas fa-chart-line"></i>
                         </div>
-                        <div id="populaires-liens">
+                        <div id="populaires-bloc"> <!-- div contenant les liens/boîtes populaires -->
+                            <!-- Nomenclatures des liens: link>box>(image/info)  -->
                             <a href="#populaires" class="populaires-link">
                                 <div class="populaires-box">
                                     <img src="images/hebergements/4_small/matin-small.jpg" alt="Hôtel le soleil du matin" class="populairesimage" />
@@ -257,11 +259,17 @@
                    </div>
                 </section>
             </div>
-            <div id="activites">
+            <div id="activites"> <!-- Section activités -->
                 <h2>Activités à Marseille</h2>
-                <section id="activites-content">
-                    <div id="activites-bloc">
-                        <div class="activitesgroupe">
+                <section id="activites-content"> <!-- div contenant les liens/boîtes activités -->
+                    <div id="activites-bloc"> <!-- div contenant les liens/boîtes populaires -->
+                        <!-- Organisation des Groupes
+                        les classes "activites-group" corresponde aux deux blocs de 3, celui de gauche et de droite
+                        les groupes sont répartis en sousgroupes "activites-sousgroupe"
+                            "activites-linkl" pour le sousgroupe de gauche et "activites-linkr"
+                            l'ajout des "d" et "u" correspondent à "up" et "down" pour désigner les lien en haut et en bas de chaque sous groupe  -->
+                            <!-- Nomenclatures des liens link>box>(image/h3) -->
+                        <div class="activites-group">
                             <a href="#activites"  class="activites-linkl activites-link">
                                 <div class="activites-box">
                                     <img src="images/activites/4_small/aport-small.jpg" alt="Vieux Port" class="activites-image" />
@@ -283,7 +291,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="activitesgroupe">
+                        <div class="activites-group">
                             <a href="#activites" class="activites-linkl activites-link">
                                 <div class="activites-box">
                                     <img src="images/activites/4_small/acalanques-small.jpg" alt="Parc National des Calanques" class="activites-image" />
@@ -309,9 +317,9 @@
                 </section>
             </div>
         </div>
-        <footer>
+        <footer> <!-- Footer de la page -->
             <div id="footer-content">
-                <div class=footer-elements>
+                <div class=footer-elements> <!-- Jout d'une div pour que la taille de celle-ci soit limité mais que le "background" du footer puisse prendre toute la largeur de la page -->
                     <h2>A propos</h2>
                     <ul>
                         <li><a href="#footer">Fontionnement du site</a></li>
