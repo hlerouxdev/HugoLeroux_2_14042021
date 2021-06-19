@@ -21,7 +21,7 @@ a, a :visited{
 #bloc-page{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     width: 95%;
     padding-bottom: 20px;
@@ -36,7 +36,9 @@ nav{
 }
 nav ul{
     list-style-type: none;
+    height: 100%;
     display: flex;
+    align-items: center;
 }
 nav li{
     margin-right: 15px;
@@ -45,6 +47,7 @@ nav a{
     font-size: 1.2em;
     padding-bottom: 3px;
     text-decoration: none;
+    height: 100%;
 }
 nav a:hover{
     color: #0065FC;
@@ -56,9 +59,8 @@ nav a:hover{
 }
 #lien-nav-box{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
-    width: 25%;
 }
 
 #inscription-link{
@@ -458,7 +460,7 @@ footer a{
 }
 
 /* Format Mobile*/
-@media screen and (max-device-width: 480px){
+@media screen and (max-device-width: 767px){
     body{
         margin: 0;
     }
@@ -472,10 +474,13 @@ footer a{
     #logo-hebergements-box img{
         height: 50px;
         width: auto;
+        margin-top: 25px;
     }
     nav{
         display: flex;
         flex-direction: column;
+        height: 150px;
+        width: 100%;
     }
     #lien-nav-box{
         display: flex;
@@ -528,14 +533,14 @@ footer a{
         font-size: 1em;
     }
     #page-title{
-        width: 90%;
+        width: 85%;
         font-size: 0.9em;
     }
     #page-title h1{
         font-size: 1.7em;
     }
     #search{
-        width: 90%;
+        width: 85%;
         justify-content: center;
         align-items: center;
         height: 50px;
@@ -574,9 +579,9 @@ footer a{
     #filtres{
         display: flex;
         flex-direction: column;
-        height: 280px;
-        width: 90%;
-        font-size: 0.9em;
+        height: 210px;
+        width: 85%;
+        font-size: 1em;
     }
     #filtres-bloc{
         display: flex;
@@ -591,10 +596,12 @@ footer a{
         height: 50px;
         border-radius: 70px;
         margin-bottom: 10px;
+        margin-right: 12px;
     }
     .buttons h2{
         margin: 0px;
-        padding-inline: 10px;
+        padding-inline: 15px;
+        font-size: 1em;
     }
     /* Changements des filtres au survol*/
     .buttons:hover{     
@@ -614,7 +621,7 @@ footer a{
     }
     #info{
         height: 50px;
-        width: 90%;
+        width: 85%;
         align-items: flex-start;
         margin-top: 50px;
     }
@@ -623,7 +630,6 @@ footer a{
         font-size: 1em;
         padding-left: 10px;
     }
-    /* Réglages du "i" dans la partie info*/
     #info-icone-box{
         border: 1px #F2F2F2 solid;
         border-radius: 50%;
@@ -648,6 +654,9 @@ footer a{
         background: transparent;
         border: none;
     }
+    #hebergements-bloc{
+        width: 85%;
+    }
     #hebergements-content{
         height: auto;
         display: flex;
@@ -671,6 +680,9 @@ footer a{
         height: 650px;
         border-radius: 0px;
     }
+    #populaires-content {
+        width: 85%;
+    }
     #populaires-box{
         width: 90%;
     }
@@ -687,7 +699,7 @@ footer a{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 90%;
+        width: 85%;
     }
     #activites-bloc{
         display: flex;
@@ -734,6 +746,7 @@ footer a{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 85%;
     }
     .footer-elements{
         width: 100%;
