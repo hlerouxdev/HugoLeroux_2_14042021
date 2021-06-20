@@ -32,7 +32,12 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 95%;
+    height: 100px;
+}
+nav img{
+    width: 150px;
 }
 nav ul{
     list-style-type: none;
@@ -45,11 +50,12 @@ nav li{
 }
 nav a{
     font-size: 1.2em;
-    padding-bottom: 3px;
     text-decoration: none;
     height: 100%;
+    display: flex;
+    align-items: center;
 }
-nav a:hover{
+#lien-nav-box a:hover{
     color: #0065FC;
     border-top: 3px solid #0065FC;
 }
@@ -61,8 +67,17 @@ nav a:hover{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    height: 100%;
 }
-
+#nav-hebergements{
+    height: 100%;
+}
+#nav-activites{
+    height: 100%;
+}
+#lien-inscription{
+    height: 100%;
+}
 #inscription-link{
     font-weight: bold;
     color: #0065FC;
@@ -311,6 +326,7 @@ header p{
     width: 97.5%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .populaires-link{
     display: flex;
@@ -328,8 +344,7 @@ header p{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 40%;
-    margin-left: 10%;
+    width: 55%;
     height: 85%;
 }
 .populaires-text{
@@ -468,19 +483,21 @@ footer a{
         width: 100%;
     }
     #logo-hebergements-box{
-        height: 20px;
+        height: 0;
         align-items: flex-start;
     }
     #logo-hebergements-box img{
         height: 50px;
         width: auto;
-        margin-top: 25px;
+        margin-top: 125px;
+        padding-left: 15%;
     }
     nav{
         display: flex;
         flex-direction: column;
         height: 150px;
         width: 100%;
+        align-items: flex-start;
     }
     #lien-nav-box{
         display: flex;
@@ -491,6 +508,9 @@ footer a{
         justify-content: space-between;
         border-bottom: 5px solid #F2F2F2;
         margin: 0px;
+    }
+    #lien-inscription{
+        padding-right: 5%;
     }
     #lien-nav-box ul{
         display: flex;
@@ -508,8 +528,8 @@ footer a{
         width: 50%;
         display: flex;
         justify-content: center;
-        left: 0;
-        margin: 0px;
+        left: 10%;
+        margin: 0;
     }
     #nav-activites{
         height: 50%;
@@ -519,11 +539,12 @@ footer a{
         display: flex;
         justify-content: center;
         right: 0;
+        margin: 0;
     }
     #lien-nav-box li:hover{
         border-bottom: solid #0065FC 5px;
     }
-    nav a:hover{
+    #lien-nav-box a:hover{
         border-top: transparent;
     }
     header{
@@ -579,13 +600,15 @@ footer a{
     #filtres{
         display: flex;
         flex-direction: column;
-        height: 210px;
+        height: 260px;
         width: 85%;
         font-size: 1em;
     }
     #filtres-bloc{
         display: flex;
+        justify-content: space-between;
         flex-wrap: wrap;
+        height: 220px;
         width: 100%;
         padding-inline-start: 0px;
     }
@@ -593,10 +616,10 @@ footer a{
         display: flex;
         align-items: center;
         border: 2px #F2F2F2 solid;
-        height: 50px;
+        height: 45px;
         border-radius: 70px;
-        margin-bottom: 10px;
-        margin-right: 12px;
+        margin-bottom: 0;
+        margin-right: 0;   
     }
     .buttons h2{
         margin: 0px;
@@ -611,8 +634,8 @@ footer a{
     /* réglages du background circulaire pour les icones des filtres */
     .filtres-icone{
         color: #0065FC;
-        height: 50px;
-        width: 50px;
+        height: 45px;
+        width: 45px;
         background-color: #DEEBFF;
         border-radius: 50%;
         display: flex;
@@ -623,7 +646,7 @@ footer a{
         height: 50px;
         width: 85%;
         align-items: flex-start;
-        margin-top: 50px;
+        margin-top: 0;
     }
     #info p{
         margin: 0px;
@@ -683,14 +706,16 @@ footer a{
     #populaires-content {
         width: 85%;
     }
-    #populaires-box{
+    .populaires-box{
+        display: flex;
         width: 90%;
+        justify-content: space-between;
     }
     .populaires-link{
         height: 160px;
     }
     .populaires-info{
-        width: 50%;
+        width: 55%;
     }
     #activites{
         align-items: center;
@@ -767,6 +792,7 @@ footer a{
     }
     nav img{
         width: 150px;
+        margin-left: 20px;
     }
     #lien-nav-box{
         width: 50%;
@@ -810,17 +836,23 @@ footer a{
     #populaires-content {
         width: 90%;
     }
-    #populaires-box{
-        width: 90%;
-    }
     #populaires-bloc{
         flex-direction: row;
         flex-wrap: wrap;
         height: 400px;
     }
+    .populaires-box{
+        display: flex;
+        width: 97%;
+        justify-content: space-between;
+    }
     .populaires-link{
         width: 45%;
         height: 200px;
+    }
+    .populaires-info{
+        margin-left: 0;
+        width: 50%;
     }
     #activites{
         width: 90%;
@@ -842,11 +874,16 @@ footer a{
     nav{
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
         font-size: 1.5em;
+        width: 100%;
+        height: 150px;
     }
     nav img{
         width: 150px;
-        margin-top: 70px;
+        width: 150px;
+        padding-left: 20%;
+        margin-top: 75px;
     }
     #logo-hebergements-box{
         height: 0;
@@ -899,9 +936,12 @@ footer a{
     nav a:hover{
         border-top: transparent;
     }
+    #lien-nav-box a:hover{
+        border-top: transparent;
+    }
     /* Header */
     header{
-        width: 95%;
+        width: 90%;
     }
     #search{
         width: 100%;
@@ -949,22 +989,24 @@ footer a{
     }
     #populaires-content{
         height: auto;
-        width: 95%;
-    }
-    #populaires-box{
-        width: 95%;
+        width: 90%;
     }
     #populaires-bloc{
         flex-direction: row;
         height: 350px;
         flex-wrap: wrap;
     }
+    #populaires-box{
+        width: 95%;
+        justify-content: space-between;
+    }
     .populaires-link{
         width: 45%;
         height: 150px;
     }
     .populaires-info{
-        width: 50%;
+        width: 55%;
+        margin-left: 5%;
     }
     #hebergements{
         width: 100%;
@@ -972,7 +1014,7 @@ footer a{
         background: transparent;
     }
     #hebergements-bloc{
-        width: 95%;
+        width: 90%;
         justify-content: flex-start;
     }
     #hebergements-content{
@@ -985,7 +1027,7 @@ footer a{
     /* Section Activités Tablette Portrait*/
     #activites{
         margin: 0;
-        width: 95%;
+        width: 90%;
     }
     #activites-bloc{
         flex-direction: column;
