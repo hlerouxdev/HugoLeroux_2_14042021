@@ -45,15 +45,15 @@ nav ul{
     display: flex;
     align-items: center;
 }
-nav li{
-    margin-right: 15px;
-}
-nav a{
+#lien-nav-box a{
     font-size: 1.2em;
     text-decoration: none;
     height: 100%;
+    width: 180px;
     display: flex;
+    justify-content: center;
     align-items: center;
+    border-top: 3px solid white;
 }
 #lien-nav-box a:hover{
     color: #0065FC;
@@ -489,7 +489,7 @@ footer a{
     #logo-hebergements-box img{
         height: 50px;
         width: auto;
-        margin-top: 125px;
+        margin-top: 27px;
         padding-left: 15%;
     }
     nav{
@@ -504,45 +504,29 @@ footer a{
         flex-direction: column-reverse;
         width: 100%;
         align-items: flex-end;
-        height: 100px;
+        height: 130px;
         justify-content: space-between;
-        border-bottom: 5px solid #F2F2F2;
         margin: 0px;
     }
     #lien-inscription{
-        padding-right: 5%;
+        padding-right: 0;
     }
     #lien-nav-box ul{
         display: flex;
         flex-direction: row;
         height: 100%;
         width: 100%;
-        justify-content: space-around;
-        position: relative;
         margin: 0px;
     }
-    #nav-hebergements{
-        height: 50%;
-        position: absolute;
-        bottom: 0;
+    #lien-nav-box li{
         width: 50%;
         display: flex;
         justify-content: center;
-        left: 10%;
         margin: 0;
-    }
-    #nav-activites{
-        height: 50%;
-        position: absolute;
-        bottom: 0;
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        right: 0;
-        margin: 0;
+        border-bottom: solid #F2F2F2 4px;
     }
     #lien-nav-box li:hover{
-        border-bottom: solid #0065FC 5px;
+        border-bottom: solid #0065FC 4px;
     }
     #lien-nav-box a:hover{
         border-top: transparent;
@@ -652,18 +636,19 @@ footer a{
         margin: 0px;
         font-size: 1em;
         padding-left: 10px;
+        padding-top: 5px;
     }
     #info-icone-box{
         border: 1px #F2F2F2 solid;
         border-radius: 50%;
-        height: 30px;
-        width: 40px;
+        height: 25px;
+        width: 33px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .info-icone{
-        font-size: 1em;
+        font-size: 0.7em;
         border: none;
         color: #0065FC;
         padding: 0px;
@@ -708,7 +693,7 @@ footer a{
     }
     .populaires-box{
         display: flex;
-        width: 90%;
+        width: 97%;
         justify-content: space-between;
     }
     .populaires-link{
@@ -877,13 +862,16 @@ footer a{
         align-items: flex-start;
         font-size: 1.5em;
         width: 100%;
-        height: 150px;
+        height: 200px;
+    }
+    nav li{
+        margin: 0;
     }
     nav img{
         width: 150px;
         width: 150px;
         padding-left: 20%;
-        margin-top: 75px;
+        margin-top: 110px;
     }
     #logo-hebergements-box{
         height: 0;
@@ -892,10 +880,9 @@ footer a{
         display: flex;
         flex-direction: column-reverse;
         width: 100%;
+        height: 180px;
         align-items: flex-end;
-        height: 150px;
         justify-content: space-between;
-        border-bottom: 5px solid #F2F2F2;
         margin: 0px;
         margin-top: 10px;
     }
@@ -904,34 +891,21 @@ footer a{
         flex-direction: row;
         height: 100%;
         width: 100%;
-        justify-content: space-around;
-        position: relative;
         margin: 0px;
     }
-    #nav-hebergements{
-        height: 50%;
-        position: absolute;
-        bottom: 0;
+    #lien-nav-box li{
         width: 50%;
         display: flex;
         justify-content: center;
-        left: 0;
         margin: 0px;
-    }
-    #nav-activites{
-        height: 50%;
-        position: absolute;
-        bottom: 0;
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        right: 0;
+        border-bottom: transparent 4px;
+        border-bottom: 4px solid #F2F2F2;
     }
     #inscription-link{
         margin-right: 50px;
     }
     #lien-nav-box li:hover{
-        border-bottom: solid #0065FC 5px;
+        border-bottom: solid #0065FC 4px;
     }
     nav a:hover{
         border-top: transparent;
